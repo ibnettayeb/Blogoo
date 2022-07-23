@@ -230,7 +230,9 @@ img {
   - Start our pics
  *********************************** */
 
-.our-pics {
+.our-pics,
+.random-post,
+.categories {
   margin-top: 9.6rem;
 }
 .our-pics .pic {
@@ -274,9 +276,6 @@ img {
   - Start categories
  *********************************** */
 
-.categories {
-  margin-top: 9.6rem;
-}
 .categories .category {
   padding: 1rem;
   border-bottom: 1px dashed var(--menu-color);
