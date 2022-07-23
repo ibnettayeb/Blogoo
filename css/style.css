@@ -196,7 +196,8 @@ img {
 
 .categories h3,
 .popular-posts h3,
-.our-pics h3 {
+.our-pics h3,
+.tags h3 {
   font-size: 1.8rem;
   color: var(--main-color);
   border-bottom: 1px solid var(--main-color);
@@ -231,8 +232,9 @@ img {
  *********************************** */
 
 .our-pics,
+.categories,
 .random-post,
-.categories {
+.tags {
   margin-top: 9.6rem;
 }
 .our-pics .pic {
@@ -284,4 +286,19 @@ img {
 .categories .category a:visited {
   color: var(--heading-color);
   font-size: 1.8rem;
+}
+
+/* *********************************** 
+  - Start tags
+ *********************************** */
+
+.tags .tag:link,
+.tags .tag:visited {
+  background-color: #e8e8e8;
+  padding: 1rem 2rem;
+  display: inline-block;
+  border-radius: 3px;
+  font-size: 1.4rem;
+  color: #707070;
+  margin: 0.5rem 0.8rem;
 }
