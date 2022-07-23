@@ -28,6 +28,9 @@ a {
   margin: 0 auto;
   padding: 0 1.5rem;
 }
+img {
+  border-radius: 5px;
+}
 
 /* *********************************** 
   - Start Header
@@ -119,20 +122,14 @@ a {
  *********************************** */
 
 .main-content {
-  display: flex;
-  margin-top: 6.4rem;
+  display: grid;
+  grid-template-columns: 4fr 2.5fr;
+  padding-top: 6.4rem;
   gap: 6.4rem;
-}
-.articles {
   background-color: #f8f8f8;
 }
-.main-content .articles {
-  width: 80%;
-}
-.main-content .sidebar {
-  width: 20%;
-}
-.article {
+
+.articles .article {
   border-bottom: 1px dashed #919192;
   text-align: center;
   margin-bottom: 3.6rem;
@@ -185,4 +182,39 @@ a {
   display: flex;
   justify-content: end;
   margin-bottom: 2rem;
+}
+
+/* *********************************** 
+  - Start popular posts 
+ *********************************** */
+.aside {
+  overflow: hidden;
+}
+
+.popular-posts h3 {
+  font-size: 1.8rem;
+  color: var(--main-color);
+  border-bottom: 1px solid var(--main-color);
+  margin-bottom: 4rem;
+  padding-bottom: 2rem;
+}
+.popular-posts .article {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  gap: 2.4rem;
+  margin-bottom: 2rem;
+}
+
+.popular-posts .content a:link,
+.popular-posts .content a:visited {
+  color: var(--text-color);
+  font-size: 1.8rem;
+}
+.popular-posts .info {
+  margin-top: 1.2rem;
+}
+.popular-posts .info li {
+  font-size: 1rem;
 }
