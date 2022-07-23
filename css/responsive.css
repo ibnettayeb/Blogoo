@@ -1,0 +1,24 @@
+@media (max-width: 75em) {
+  .main-content {
+    grid-template-columns: 2fr 1fr;
+  }
+  .popular-posts .article img {
+    display: none;
+  }
+}
+@media (max-width: 65em) {
+  .nav .main-menu {
+    display: none;
+  }
+}
+@media (max-width: 61.5em) {
+  .main-content {
+    grid-template-columns: 1fr;
+  }
+  .popular-posts .article {
+    grid-template-columns: 1fr;
+  }
+  .popular-posts .article img {
+    display: block;
+  }
+}
