@@ -84,13 +84,13 @@ img {
   width: 50%;
   text-align: center;
 }
-.hero-content button {
+.btn {
   background-color: var(--main-color);
   color: #fff;
   font-size: 2.5rem;
   border: none;
-  padding: 1.2rem 2.4rem;
-  border-radius: 6px;
+  padding: 1rem 2rem;
+  border-radius: 3px;
   font-family: "Poppins", sans-serif;
 }
 .hero-content p {
@@ -127,6 +127,7 @@ img {
   padding-top: 6.4rem;
   gap: 6.4rem;
   background-color: #f8f8f8;
+  margin-bottom: 12.8rem;
 }
 
 .articles .article {
@@ -138,7 +139,7 @@ img {
   border-bottom: none;
 }
 .article-content {
-  padding: 0 4rem;
+  padding: 0 2rem;
 }
 .article img {
   width: 100%;
@@ -150,7 +151,6 @@ img {
   border-radius: 3px;
   padding: 1rem 2.4rem;
   display: inline-block;
-  margin: 2rem 0;
 }
 
 .article h2 {
@@ -177,8 +177,8 @@ img {
   margin: 3rem 0;
   color: var(--text-color);
 }
-.article .btn:link,
-.article .btn:visited {
+.article .read-more:link,
+.article .read-more:visited {
   font-size: 1.8rem;
   text-transform: uppercase;
   color: var(--main-color);
@@ -197,7 +197,8 @@ img {
 .categories h3,
 .popular-posts h3,
 .our-pics h3,
-.tags h3 {
+.tags h3,
+.voting-poll h3 {
   font-size: 1.8rem;
   color: var(--main-color);
   border-bottom: 1px solid var(--main-color);
@@ -234,7 +235,8 @@ img {
 .our-pics,
 .categories,
 .random-post,
-.tags {
+.tags,
+.voting-poll {
   margin-top: 9.6rem;
 }
 .our-pics .pic {
@@ -301,4 +303,37 @@ img {
   font-size: 1.4rem;
   color: #707070;
   margin: 0.5rem 0.8rem;
+}
+
+/* *********************************** 
+  - Start Voting poll
+ *********************************** */
+.voting-poll p {
+  font-size: 2rem;
+  color: var(--heading-color);
+  margin-bottom: 2rem;
+}
+.voting-poll .input {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+.voting-poll span {
+  font-size: 1.8rem;
+  color: var(--heading-color);
+}
+.voting-poll .links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 2rem;
+  margin-top: 2rem;
+}
+.voting-poll .btn {
+  font-size: 2rem;
+}
+.voting-poll .results {
+  font-size: 1.8rem;
+  color: var(--heading-color);
 }
