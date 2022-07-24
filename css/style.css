@@ -11,11 +11,13 @@
 }
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 body {
   font-family: "Poppins", sans-serif;
   line-height: 1.6;
   font-weight: 400;
+  overflow: hidden;
 }
 ul {
   list-style: none;
@@ -35,23 +37,21 @@ img {
 /* *********************************** 
   - Start Header
  *********************************** */
-
+.header {
+  position: relative;
+}
 .nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 10rem;
 }
-.main-menu,
-.right-menu {
+.main-menu {
   display: flex;
   align-items: center;
-  height: 100%;
   gap: 4rem;
 }
 .nav li,
 .nav a {
-  height: 100%;
   display: flex;
   align-items: center;
 }
@@ -66,9 +66,24 @@ img {
   border-top: 3px solid var(--main-color);
   color: var(--main-color);
 }
-.nav svg {
+.main-menus svg {
   width: 2rem;
   height: 2rem;
+}
+.btn-mobile {
+  display: none;
+  background: transparent;
+  border: none;
+}
+.btn-mobile svg {
+  width: 3rem;
+  height: 3rem;
+}
+
+.btn-mobile .btn-close {
+  width: 3.6rem;
+  height: 3.6rem;
+  display: none;
 }
 /*---------------------------*/
 .hero {
